@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LoadWin_BF1InstallPath" xml:space="preserve">
+    <value>BF1 Install Path</value>
+  </data>
+  <data name="ToolsView_ClearModData" xml:space="preserve">
+    <value>Clear Mod Data</value>
+  </data>
+  <data name="LoadWin_ClientMode" xml:space="preserve">
+    <value>Client Mode</value>
+  </data>
+  <data name="LaunchView_EnabledMod" xml:space="preserve">
+    <value>Enabled Mod</value>
+  </data>
+  <data name="ModWin_InstallModAndRunBF1Game" xml:space="preserve">
+    <value>Install Mod And Run BF1 Game</value>
+  </data>
+  <data name="ModWin_InstallModList" xml:space="preserve">
+    <value>Install Mod List</value>
+  </data>
+  <data name="ToolsView_IPRedirect" xml:space="preserve">
+    <value>IP Redirect</value>
+  </data>
+  <data name="ToolsView_KillBF1Process" xml:space="preserve">
+    <value>Kill BF1 Process</value>
+  </data>
+  <data name="LoadWin_DisplayLanguage" xml:space="preserve">
+    <value>UI Language</value>
+  </data>
+  <data name="ModWin_LastWriteTime" xml:space="preserve">
+    <value>Last Write Time</value>
+  </data>
+  <data name="ModWin_FilePath" xml:space="preserve">
+    <value>File Path</value>
+  </data>
+  <data name="LaunchView_Run" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="LoadWin_RunMainApp" xml:space="preserve">
+    <value>Launch Main App</value>
+  </data>
+  <data name="LoadWin_SelectPath" xml:space="preserve">
+    <value>Select BF1 Path</value>
+  </data>
+  <data name="LoadWin_SelectBF1InstallPath" xml:space="preserve">
+    <value>Please select BF1 game install directory "bf1.exe" file path</value>
+  </data>
+  <data name="ModWin_SelectMods" xml:space="preserve">
+    <value>Select Mods</value>
+  </data>
+  <data name="LoadWin_ServerMode" xml:space="preserve">
+    <value>Server Mode</value>
+  </data>
+  <data name="ToolsView_ShowFPS" xml:space="preserve">
+    <value>Show FPS</value>
+  </data>
+  <data name="ModWin_Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="LaunchView_Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="NameView_Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>BF1 Marne Tools</value>
+  </data>
+  <data name="LoadWin_WorkMode" xml:space="preserve">
+    <value>Work Mode</value>
+  </data>
+  <data name="LocaleWin_BF1Language" xml:space="preserve">
+    <value>BF1 Language</value>
+  </data>
+  <data name="LocaleWin_ChangeLanguage" xml:space="preserve">
+    <value>Change Language</value>
+  </data>
+  <data name="LocaleWin_English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="LocaleWin_French" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="LocaleWin_German" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="LocaleWin_SpanishSpain" xml:space="preserve">
+    <value>Spanish-Spain</value>
+  </data>
+  <data name="LocaleWin_SpanishMexico" xml:space="preserve">
+    <value>Spanish-Mexico</value>
+  </data>
+  <data name="LocaleWin_Italian" xml:space="preserve">
+    <value>Italian</value>
+  </data>
+  <data name="LocaleWin_Russian" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="LocaleWin_Polish" xml:space="preserve">
+    <value>Polish</value>
+  </data>
+  <data name="LocaleWin_Japanese" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="LocaleWin_TChinese" xml:space="preserve">
+    <value>TChinese</value>
+  </data>
+  <data name="LocaleWin_PortugueseBrazil" xml:space="preserve">
+    <value>Portuguese-Brazil</value>
+  </data>
+  <data name="LocaleWin_Arabic" xml:space="preserve">
+    <value>Arabic</value>
+  </data>
+  <data name="LocaleWin_Turkish" xml:space="preserve">
+    <value>Turkish</value>
+  </data>
+  <data name="MainWin_SetLaunchAccount" xml:space="preserve">
+    <value>Set Launch Account</value>
+  </data>
+  <data name="MainWin_SetGameLanguage" xml:space="preserve">
+    <value>Set Game Language</value>
+  </data>
+  <data name="MainWin_OpenMarneFolder" xml:space="preserve">
+    <value>Open Marne Folder</value>
+  </data>
+  <data name="MainWin_OpenCrashFolder" xml:space="preserve">
+    <value>Open Crash Folder</value>
+  </data>
+  <data name="MainWin_OpenBF1Folder" xml:space="preserve">
+    <value>Open BF1 Folder</value>
+  </data>
+  <data name="MainWin_OpenConfigFolder" xml:space="preserve">
+    <value>Open Config Folder</value>
+  </data>
+  <data name="MainWin_ShowWindow" xml:space="preserve">
+    <value>Show Window</value>
+  </data>
+  <data name="MainWin_ExitApp" xml:space="preserve">
+    <value>Exit App</value>
+  </data>
+  <data name="LogView_Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="LogView_Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="LogView_Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NameView_PlayerNameHint" xml:space="preserve">
+    <value>Input custom player name</value>
+  </data>
+  <data name="NameView_ChangePlayerName" xml:space="preserve">
+    <value>Change Player Name</value>
+  </data>
+  <data name="DialogWin_Enter" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="DialogWin_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="AccountWin_EnterAccount" xml:space="preserve">
+    <value>Enter Account</value>
+  </data>
+  <data name="AccountWin_Email" xml:space="preserve">
+    <value>EA Account Email</value>
+  </data>
+  <data name="AccountWin_Password" xml:space="preserve">
+    <value>EA Account Password</value>
+  </data>
+  <data name="AccountWin_EmailHint" xml:space="preserve">
+    <value>Enter the email for the EA account that owns BF1</value>
+  </data>
+  <data name="AccountWin_PasswordHint" xml:space="preserve">
+    <value>Enter the password for the EA account that owns BF1</value>
+  </data>
+  <data name="LoadWin_BeginInitializeResources" xml:space="preserve">
+    <value>Begin initialize resources data...</value>
+  </data>
+  <data name="LoadWin_ClosingOtherServiceProcess" xml:space="preserve">
+    <value>Closing other service process...</value>
+  </data>
+  <data name="LoadWin_OtherServiceProcessClosedSuccess" xml:space="preserve">
+    <value>Other service process, closed success.</value>
+  </data>
+  <data name="LoadWin_ResourceFileFrostyCheckPassed" xml:space="preserve">
+    <value>Resource file Frosty check passed.</value>
+  </data>
+  <data name="LoadWin_ResourceFileMarneCheckPassed" xml:space="preserve">
+    <value>Resource file Marne check passed.</value>
+  </data>
+  <data name="LoadWin_ResourceFileServiceCheckPassed" xml:space="preserve">
+    <value>Resource file Service check passed.</value>
+  </data>
+  <data name="LoadWin_ExtractingResourceFileFrostyZip" xml:space="preserve">
+    <value>Extracting resource file Frosty.zip...</value>
+  </data>
+  <data name="LoadWin_ExtractingResourceFileMarneZip" xml:space="preserve">
+    <value>Extracting resource file Marne.zip...</value>
+  </data>
+  <data name="LoadWin_ExtractingResourceFileServiceZip" xml:space="preserve">
+    <value>Extracting resource file Service.zip...</value>
+  </data>
+  <data name="LoadWin_UnzippingTheFileFrostyZip" xml:space="preserve">
+    <value>Unzipping the file Frosty.zip...</value>
+  </data>
+  <data name="LoadWin_UnzippingTheFileMarneZip" xml:space="preserve">
+    <value>Unzipping the file Marne.zip...</value>
+  </data>
+  <data name="LoadWin_UnzippingTheFileServiceZip" xml:space="preserve">
+    <value>Unzipping the file Service.zip...</value>
+  </data>
+  <data name="LoadWin_AppResourcesDataInitializeSuccess" xml:space="preserve">
+    <value>App resources data initialize success.</value>
+  </data>
+  <data name="LocaleWin_NotFoundBF1RegLangInfo" xml:space="preserve">
+    <value>BF1 registry language infor not found</value>
+  </data>
+  <data name="LocaleWin_GetBF1RegLangInfoException" xml:space="preserve">
+    <value>An exception occurred when get BF1 registry language info</value>
+  </data>
+  <data name="LocaleWin_GetBF1RegLangInfoSuccess" xml:space="preserve">
+    <value>Get BF1 registry language info success</value>
+  </data>
+  <data name="LocaleWin_ChangeBF1RegLangInfoSuccess" xml:space="preserve">
+    <value>Change BF1 registry language success</value>
+  </data>
+  <data name="LocaleWin_PlayerNotSelectBF1LangInfoTaskCanceled" xml:space="preserve">
+    <value>Player not select BF1 language.</value>
+  </data>
+  <data name="LocaleWin_ChangeBF1RegLangInfoException" xml:space="preserve">
+    <value>Change BF1 language occurred exception.</value>
+  </data>
+  <data name="LoadWin_OpenConfigFolder" xml:space="preserve">
+    <value>Open Config Folder</value>
+  </data>
+  <data name="LoadWin_Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="LoadWin_ResourceInitializeException" xml:space="preserve">
+    <value>An exception occurred when resources initialize.</value>
+  </data>
+  <data name="LoadWin_FileDialogTitle" xml:space="preserve">
+    <value>Please select BF1 game install directory "bf1.exe" file path.</value>
+  </data>
+  <data name="LoadWin_FileDialogFilter" xml:space="preserve">
+    <value>Exe Files (.exe)|*.exe</value>
+  </data>
+  <data name="LoadWin_NoSupportBF1Version" xml:space="preserve">
+    <value>Unsupported BF1 game version. Please select again.</value>
+  </data>
+  <data name="LoadWin_BF1VersionCheckPassed" xml:space="preserve">
+    <value>BF1 game version check passed.</value>
+  </data>
+  <data name="LoadWin_BF1InstallDiskNotNTFS" xml:space="preserve">
+    <value>The BF1 Install disk format is not NTFS. Please convert the disk format.</value>
+  </data>
+  <data name="LoadWin_BF1InstallDiskCheckPassed" xml:space="preserve">
+    <value>BF1 install disk format check passed.</value>
+  </data>
+  <data name="LoadWin_GetBF1ExePathSuccess" xml:space="preserve">
+    <value>Get BF1 game exe path success.</value>
+  </data>
+  <data name="LoadWin_SelectBF1PathException" xml:space="preserve">
+    <value>An exception occurred when select BF1 install path.</value>
+  </data>
+  <data name="App_Welcome" xml:space="preserve">
+    <value>Welcome to use</value>
+  </data>
+  <data name="App_NotRunAgain" xml:space="preserve">
+    <value>Please not run it again, the program is already running.</value>
+  </data>
+  <data name="App_Port3216Warning" xml:space="preserve">
+    <value>TCP port 3216 is occupied, please release the port.</value>
+  </data>
+  <data name="App_Port59743Warning" xml:space="preserve">
+    <value>TCP port 59743 is occupied, please release the port.</value>
+  </data>
+  <data name="App_CheckingPort" xml:space="preserve">
+    <value>Checking TCP port availability...</value>
+  </data>
+  <data name="App_CheckPortPassed" xml:space="preserve">
+    <value>Check TCP port passed.</value>
+  </data>
+  <data name="App_Close" xml:space="preserve">
+    <value>The program has been closed.</value>
+  </data>
+  <data name="GameUtil_IsCheckBF1Running" xml:space="preserve">
+    <value>BF1 is currently running, please close it first.</value>
+  </data>
+  <data name="GameUtil_IsCheckBF1NotRun" xml:space="preserve">
+    <value>BF1 process not found, Task canceled.</value>
+  </data>
+  <data name="GameUtil_IsCheckFrostyModManagerRunning" xml:space="preserve">
+    <value>FrostyModManager is currently running, please do not run it again.</value>
+  </data>
+  <data name="GameUtil_IsCheckFrostyModManagerRunning2" xml:space="preserve">
+    <value>FrostyModManager is currently running, please close it first.</value>
+  </data>
+  <data name="GameUtil_IsCheckMarneLauncherRunning" xml:space="preserve">
+    <value>MarneLauncher is currently running, please do not run it again.</value>
+  </data>
+  <data name="MiscUtil_VersionInfo" xml:space="preserve">
+    <value>Version Info</value>
+  </data>
+  <data name="MiscUtil_UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="MiscUtil_MachineName" xml:space="preserve">
+    <value>Machine Name</value>
+  </data>
+  <data name="MiscUtil_OSVersion" xml:space="preserve">
+    <value>OS Version</value>
+  </data>
+  <data name="MiscUtil_SystemDirectory" xml:space="preserve">
+    <value>System Directory</value>
+  </data>
+  <data name="MiscUtil_RuntimeVersion" xml:space="preserve">
+    <value>Runtime Version</value>
+  </data>
+  <data name="MiscUtil_OSArchitecture" xml:space="preserve">
+    <value>OS Architecture</value>
+  </data>
+  <data name="MiscUtil_RuntimeIdentifier" xml:space="preserve">
+    <value>Runtime Identifier</value>
+  </data>
+  <data name="MiscUtil_CrashTime" xml:space="preserve">
+    <value>Crash Time</value>
+  </data>
+  <data name="MiscUtil_ExceptionType" xml:space="preserve">
+    <value>Exception Type</value>
+  </data>
+  <data name="MiscUtil_ExceptionMsg" xml:space="preserve">
+    <value>Exception Msg</value>
+  </data>
+  <data name="MiscUtil_StackTrace" xml:space="preserve">
+    <value>Stack Trace</value>
+  </data>
+  <data name="MiscUtil_UnhandledException" xml:space="preserve">
+    <value>Unhandled Exception</value>
+  </data>
+  <data name="MainWin_DownloadUpdate" xml:space="preserve">
+    <value>Download Update</value>
+  </data>
+  <data name="MainWin_RunMainAppSuccess" xml:space="preserve">
+    <value>Launch main app success.</value>
+  </data>
+  <data name="MainWin_NotifyBalloonMsg" xml:space="preserve">
+    <value>You can use task bar right menu exit the program.</value>
+  </data>
+  <data name="MainWin_CloseSuccess" xml:space="preserve">
+    <value>Main app closed success.</value>
+  </data>
+  <data name="MainWin_CheckNewVersion" xml:space="preserve">
+    <value>Checking for new versions...</value>
+  </data>
+  <data name="NotifierHelper_Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="NotifierHelper_Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="NotifierHelper_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="NotifierHelper_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="NotifierHelper_Notification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="MainWin_CheckUpdateFailed" xml:space="preserve">
+    <value>Failed to check new version, please check your network.</value>
+  </data>
+  <data name="MainWin_CheckUpdateRetry" xml:space="preserve">
+    <value>Failed to check new version, retrying...</value>
+  </data>
+  <data name="MainWin_CheckNoUpdate" xml:space="preserve">
+    <value>You are using the latest version.</value>
+  </data>
+  <data name="MainWin_CheckNeedUpdate" xml:space="preserve">
+    <value>Found new version, please update.</value>
+  </data>
+  <data name="AccountWin_Note" xml:space="preserve">
+    <value>Note: Please enter the email and password of any EA account that owns BF1, even if the ea account has been banned, or by EAAC or FF banned. The account only needs own BF1 regardless of the game version, mainly to allow EA build the Denuvo license for BF1. Otherwise, the game cannot be launch.</value>
+  </data>
+  <data name="ModWin_ReadConfigException" xml:space="preserve">
+    <value>An exception occurred when reading Mod config info.</value>
+  </data>
+  <data name="ModWin_FileDialogTitle" xml:space="preserve">
+    <value>Please select the BF1 fbmod files you want to install (multiple-select supported).</value>
+  </data>
+  <data name="ModWin_FileDialogFilter" xml:space="preserve">
+    <value>Fbmod files (.fbmod)|*.fbmod</value>
+  </data>
+  <data name="ModWin_ClearOldMods" xml:space="preserve">
+    <value>Successfully cleared old Mod files.</value>
+  </data>
+  <data name="ModWin_SelectModsException" xml:space="preserve">
+    <value>An exception occurred when select need install mods.</value>
+  </data>
+  <data name="ModWin_WriteConfigFrostyModManager" xml:space="preserve">
+    <value>FrostyModManager config file write successfully.</value>
+  </data>
+  <data name="ModWin_LaunchFrostyModManager" xml:space="preserve">
+    <value>Launcher FrostyModManager...</value>
+  </data>
+  <data name="ModWin_InstallModsException" xml:space="preserve">
+    <value>An exception occurred when install mods.</value>
+  </data>
+  <data name="NameView_InitializePlayerNameException" xml:space="preserve">
+    <value>An exception occurred when initializing custom player name.</value>
+  </data>
+  <data name="NameView_PlayerNameNoEmpty" xml:space="preserve">
+    <value>Player name cannot be empty.</value>
+  </data>
+  <data name="NameView_PlayerNameMax15Bytes" xml:space="preserve">
+    <value>Player name cannot more 15 bytes.</value>
+  </data>
+  <data name="NameView_PlayerNameChangeSuccess" xml:space="preserve">
+    <value>Player name success changed.</value>
+  </data>
+  <data name="NameView_ChangePlayerNameException" xml:space="preserve">
+    <value>Change player name occurred exception.</value>
+  </data>
+  <data name="ToolsView_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="ToolsView_ClearModDataWarning" xml:space="preserve">
+    <value>Are you sure you want to clear the BF1 mods data?</value>
+  </data>
+  <data name="ToolsView_ClearModDataNotFound" xml:space="preserve">
+    <value>The BF1 mod data folder not found, task canceled.</value>
+  </data>
+  <data name="ToolsView_ClearModDataSuccess" xml:space="preserve">
+    <value>Clear mod data success.</value>
+  </data>
+  <data name="ToolsView_ClearModDataException" xml:space="preserve">
+    <value>An exception occurred when clear mod data.</value>
+  </data>
+  <data name="ToolsView_KillBf1ProcessWarning" xml:space="preserve">
+    <value>Are you sure you want to kill BF1 process?</value>
+  </data>
+  <data name="ToolsView_KillBF1ProcessSuccess" xml:space="preserve">
+    <value>Kill BF1 process success.</value>
+  </data>
+  <data name="FileHelper_ClearDirectorySuccess" xml:space="preserve">
+    <value>Clear directory success.</value>
+  </data>
+  <data name="FileHelper_ClearDirectoryException" xml:space="preserve">
+    <value>An exception occurred when clear directory.</value>
+  </data>
+  <data name="FileHelper_ExtractResFileSuccess" xml:space="preserve">
+    <value>Extracting resource file success.</value>
+  </data>
+  <data name="FileHelper_ExtractResFileException" xml:space="preserve">
+    <value>An exception occurred when extracting resource file.</value>
+  </data>
+  <data name="EaWatchDog_NotAgainRun" xml:space="preserve">
+    <value>EA Watch Dog service is currently running, please not run it again.</value>
+  </data>
+  <data name="EaWatchDog_RunSuccess" xml:space="preserve">
+    <value>Run EA Watch Dog service success.</value>
+  </data>
+  <data name="EaWatchDog_StopSuccess" xml:space="preserve">
+    <value>Stop EA Watch Dog service success.</value>
+  </data>
+  <data name="EaWatchDog_Cancellation" xml:space="preserve">
+    <value>EA Watch Dog service has been canceled.</value>
+  </data>
+  <data name="EaWatchDog_KillOriginSuccess" xml:space="preserve">
+    <value>Kill Origin process tree success.</value>
+  </data>
+  <data name="EaWatchDog_KillEADesktopSuccess" xml:space="preserve">
+    <value>Kill EADesktop process tree success.</value>
+  </data>
+  <data name="EaWatchDog_Exception" xml:space="preserve">
+    <value>An exception occurred when run EA Watch Dog task.</value>
+  </data>
+  <data name="Launch_GamePathNotEmpty" xml:space="preserve">
+    <value>BF1 game path is empty, task canceled.</value>
+  </data>
+  <data name="Launch_LaunchingGame" xml:space="preserve">
+    <value>Launching BF1 game...</value>
+  </data>
+  <data name="Launch_LaunchGameSuccess" xml:space="preserve">
+    <value>Launch BF1 game success.</value>
+  </data>
+  <data name="Launch_LaunchGameException" xml:space="preserve">
+    <value>Launch BF1 game occurred exception.</value>
+  </data>
+  <data name="LocalHttpServer_NotAgainRun" xml:space="preserve">
+    <value>Local HTTP service is currently running, please not run it again.</value>
+  </data>
+  <data name="LocalHttpServer_RunSuccess" xml:space="preserve">
+    <value>Run Local HTTP service success.</value>
+  </data>
+  <data name="LocalHttpServer_StopSuccess" xml:space="preserve">
+    <value>Stop Local HTTP service success.</value>
+  </data>
+  <data name="LocalHttpServer_ReceiveGetRequest" xml:space="preserve">
+    <value>Receive Local HTTP GET request</value>
+  </data>
+  <data name="LocalHttpServer_RequestInfo" xml:space="preserve">
+    <value>Request client ip is</value>
+  </data>
+  <data name="LocalHttpServer_ReceivePostRequest" xml:space="preserve">
+    <value>Receive Local HTTP POST request</value>
+  </data>
+  <data name="LocalHttpServer_HandleRequestException" xml:space="preserve">
+    <value>An exception occurred when handle Local HTTP request.</value>
+  </data>
+  <data name="Ready_RunService" xml:space="preserve">
+    <value>Starting service process...</value>
+  </data>
+  <data name="Ready_RunLSXService" xml:space="preserve">
+    <value>Starting LSX service...</value>
+  </data>
+  <data name="Ready_RunLocalHttpService" xml:space="preserve">
+    <value>Starting Local HTTP service...</value>
+  </data>
+  <data name="Ready_RunEaWatchDogService" xml:space="preserve">
+    <value>Starting EA Watch Dog service...</value>
+  </data>
+  <data name="Ready_RunServiceException" xml:space="preserve">
+    <value>An exception occurred when starting core service.</value>
+  </data>
+  <data name="Ready_StopLocalHttpService" xml:space="preserve">
+    <value>Stopping Local HTTP service...</value>
+  </data>
+  <data name="Ready_StopLSXService" xml:space="preserve">
+    <value>Stopping LSX service...</value>
+  </data>
+  <data name="Ready_StopEaWatchDogService" xml:space="preserve">
+    <value>Stopping EA Watch Dog service...</value>
+  </data>
+  <data name="Ready_StopServiceException" xml:space="preserve">
+    <value>An exception occurred when stopping core service.</value>
+  </data>
+  <data name="RegistryHelper_WriteEADesktopVirtualRegSuccess" xml:space="preserve">
+    <value>The virtual install path for EADesktop has been success write to the registry.</value>
+  </data>
+  <data name="RegistryHelper_WriteEADesktopVirtualRegException" xml:space="preserve">
+    <value>An exception occurred when write to the registry at the virtual install path for EADesktop.</value>
+  </data>
+  <data name="RegistryHelper_ReadException" xml:space="preserve">
+    <value>An exception occurred when reading the registry.</value>
+  </data>
+  <data name="RegistryHelper_WriteException" xml:space="preserve">
+    <value>An exception occurred when writing the registry.</value>
+  </data>
+  <data name="ProcessHelper_HttpFormatError" xml:space="preserve">
+    <value>The link is not in HTTP format.</value>
+  </data>
+  <data name="ProcessHelper_OpenHttpException" xml:space="preserve">
+    <value>An exception occurred when open http link.</value>
+  </data>
+  <data name="ProcessHelper_OpenDirectoryNotExists" xml:space="preserve">
+    <value>The folder path does not exist.</value>
+  </data>
+  <data name="ProcessHelper_OpenDirectoryException" xml:space="preserve">
+    <value>Open directory occurred exception.</value>
+  </data>
+  <data name="ProcessHelper_OpenProcessNotExists" xml:space="preserve">
+    <value>The program path does not exist.</value>
+  </data>
+  <data name="ProcessHelper_OpenProcessException" xml:space="preserve">
+    <value>An exception occurred when open process.</value>
+  </data>
+  <data name="ProcessHelper_OpenProcessSuccess" xml:space="preserve">
+    <value>Open process success.</value>
+  </data>
+  <data name="ProcessHelper_CloseProcessSuccess" xml:space="preserve">
+    <value>Close process success.</value>
+  </data>
+  <data name="ProcessHelper_CloseProcessNotFound" xml:space="preserve">
+    <value>No process info found.</value>
+  </data>
+  <data name="ProcessHelper_CloseProcessException" xml:space="preserve">
+    <value>An exception occurred when close process.</value>
+  </data>
+  <data name="JsonHelper_DeserializeException" xml:space="preserve">
+    <value>An exception occurred when deserialize.</value>
+  </data>
+  <data name="JsonHelper_SerializeException" xml:space="preserve">
+    <value>An exception occurred when serialize.</value>
+  </data>
+  <data name="MsgBoxHelper_Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="MsgBoxHelper_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="MsgBoxHelper_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="MsgBoxHelper_Exception" xml:space="preserve">
+    <value>Exception</value>
+  </data>
+  <data name="MsgBoxHelper_ExceptionMsg" xml:space="preserve">
+    <value>An unknown exception occurred, check the exception message for more info.\n\nException message:\n</value>
+  </data>
+  <data name="Globals_ReadConfig" xml:space="preserve">
+    <value>Starting to read the config file...</value>
+  </data>
+  <data name="Globals_ReadConfigSuccess" xml:space="preserve">
+    <value>Read the config file success.</value>
+  </data>
+  <data name="Globals_SaveConfig" xml:space="preserve">
+    <value>Starting to save the config file...</value>
+  </data>
+  <data name="Globals_SaveConfigSuccess" xml:space="preserve">
+    <value>Save the config file success.</value>
+  </data>
+  <data name="Globals_BF1PathFind" xml:space="preserve">
+    <value>The install path for BF1 has been find.</value>
+  </data>
+  <data name="Globals_BF1PathNotFind" xml:space="preserve">
+    <value>The install path for BF1 was not found, please select it manually.</value>
+  </data>
+  <data name="EaApi_ResponseStatus" xml:space="preserve">
+    <value>request completed, status</value>
+  </data>
+  <data name="EaApi_StatusCode" xml:space="preserve">
+    <value>request completed, status code</value>
+  </data>
+  <data name="EaApi_TimeOut" xml:space="preserve">
+    <value>request timed out</value>
+  </data>
+  <data name="EaApi_Exception" xml:space="preserve">
+    <value>request occurred exception</value>
+  </data>
+  <data name="EaApi_RequestFailed" xml:space="preserve">
+    <value>request failed, response content</value>
+  </data>
+  <data name="EaApi_GetLicenseFailed" xml:space="preserve">
+    <value>get License success</value>
+  </data>
+  <data name="EaApi_GetLicenseSuccess" xml:space="preserve">
+    <value>get License failed</value>
+  </data>
+  <data name="CoreApi_ResponseStatus" xml:space="preserve">
+    <value>request completed, status</value>
+  </data>
+  <data name="CoreApi_StatusCode" xml:space="preserve">
+    <value>request completed, status code</value>
+  </data>
+  <data name="CoreApi_TimedOut" xml:space="preserve">
+    <value>request timed out</value>
+  </data>
+  <data name="CoreApi_GetUpdateVersionSuccess" xml:space="preserve">
+    <value>get server update version success.</value>
+  </data>
+  <data name="CoreApi_GetUpdateVersionFailed" xml:space="preserve">
+    <value>get server update version failed.</value>
+  </data>
+  <data name="CoreApi_GetUpdateVersionException" xml:space="preserve">
+    <value>An exception occurred when get server update version.</value>
+  </data>
+  <data name="LSXTcpServer_RunSuccess" xml:space="preserve">
+    <value>Run LSX service success.</value>
+  </data>
+  <data name="LSXTcpServer_StopSuccess" xml:space="preserve">
+    <value>Stop LSX service success.</value>
+  </data>
+  <data name="LSXTcpServer_ContentId" xml:space="preserve">
+    <value>This launch ContentId is</value>
+  </data>
+  <data name="LSXTcpServer_HandleLaunch" xml:space="preserve">
+    <value>Handling game launch request...</value>
+  </data>
+  <data name="LaunchView_FrostyModManagerDesc" xml:space="preserve">
+    <value>For install fbmod and launch BF1 game tools. It support install multiple Mods, mouse drag Mods sorting.</value>
+  </data>
+  <data name="LaunchView_MarneLauncherDesc" xml:space="preserve">
+    <value>For launch local BF1 server or join other public server. It support Mod or LAN online play.</value>
+  </data>
+  <data name="ToolsView_EditServerSettings" xml:space="preserve">
+    <value>Edit Server Settings</value>
+  </data>
+  <data name="ToolsView_EditMapList" xml:space="preserve">
+    <value>Edit Map List</value>
+  </data>
+  <data name="SettingWin_InitSettingException" xml:space="preserve">
+    <value>An exception occurred when initialize server settings.</value>
+  </data>
+  <data name="SettingWin_ReadSettingException" xml:space="preserve">
+    <value>An exception occurred when read server settings.</value>
+  </data>
+  <data name="SettingWin_SaveSettingException" xml:space="preserve">
+    <value>An exception occurred when save server settings.</value>
+  </data>
+  <data name="SettingWin_ReadSettingSuccess" xml:space="preserve">
+    <value>Read server settings success.</value>
+  </data>
+  <data name="SettingWin_SaveSettingSuccess" xml:space="preserve">
+    <value>Save server settings success.</value>
+  </data>
+  <data name="SettingWin_SettingPath" xml:space="preserve">
+    <value>Server settings file path is</value>
+  </data>
+  <data name="SettingWin_ReadSetting" xml:space="preserve">
+    <value>Read Setting</value>
+  </data>
+  <data name="SettingWin_SaveSetting" xml:space="preserve">
+    <value>Save Setting</value>
+  </data>
+  <data name="MapWin_SaveMapList" xml:space="preserve">
+    <value>Save Map List</value>
+  </data>
+  <data name="MapWin_AddMap" xml:space="preserve">
+    <value>Add Map</value>
+  </data>
+  <data name="MapWin_DeleteMap" xml:space="preserve">
+    <value>Delete Map</value>
+  </data>
+  <data name="MapWin_ClearMapList" xml:space="preserve">
+    <value>Clear Map List</value>
+  </data>
+  <data name="MapWin_InitMapException" xml:space="preserve">
+    <value>An exception occurred when initialize map list.</value>
+  </data>
+  <data name="MapWin_SaveMapSuccess" xml:space="preserve">
+    <value>Save map list success.</value>
+  </data>
+  <data name="MapWin_MapListPath" xml:space="preserve">
+    <value>Map list file path is</value>
+  </data>
+  <data name="MapWin_SaveMapListException" xml:space="preserve">
+    <value>An exception occurred when save map list.</value>
+  </data>
+  <data name="SettingWin_UseDefaultSetting" xml:space="preserve">
+    <value>Use Default Setting</value>
+  </data>
+  <data name="LSXTcpServer_WarnGameClose" xml:space="preserve">
+    <value>Warning: The BF1 game client has been close.</value>
+  </data>
+  <data name="LSXTcpServer_NotAgainRun" xml:space="preserve">
+    <value>LSX service is currently running, please not run it again.</value>
+  </data>
+  <data name="LSXTcpServer_AsyncReadStringException" xml:space="preserve">
+    <value>An exception occurred when async reading a TCP string.</value>
+  </data>
+  <data name="LSXTcpServer_HandleClientConnectException" xml:space="preserve">
+    <value>An exception occurred when handling TCP client connect.</value>
+  </data>
+  <data name="LSXTcpServer_HandleClientBattlelogConnectException" xml:space="preserve">
+    <value>An time out exception occurred when handling TCP Battlelog client connect.</value>
+  </data>
+</root>

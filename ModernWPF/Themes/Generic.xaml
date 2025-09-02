@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+
+        <ResourceDictionary Source="/ModernWPF;component/Styles/Base.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/Normal.xaml" />
+
+        <ResourceDictionary Source="/ModernWPF;component/Styles/IconFont.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/ScrollViewer.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/ContextMenu.xaml" />
+
+        <ResourceDictionary Source="/ModernWPF;component/Styles/Image.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/TextBox.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/CheckBox.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/RadioButton.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/ToggleButton.xaml" />
+
+        <ResourceDictionary Source="/ModernWpf;component/Styles/IconButton.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/TextBoxHint.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/ImageRadioButton.xaml" />
+
+        <ResourceDictionary Source="/ModernWPF;component/Styles/IconHeader.xaml" />
+        <ResourceDictionary Source="/ModernWpf;component/Styles/IconHyperlink.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/CardMenu.xaml" />
+
+        <ResourceDictionary Source="/ModernWPF;component/Styles/ListBox.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/ListView.xaml" />
+
+        <ResourceDictionary Source="/ModernWPF;component/Styles/WinButton.xaml" />
+        <ResourceDictionary Source="/ModernWPF;component/Styles/EdgeWindow.xaml" />
+
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

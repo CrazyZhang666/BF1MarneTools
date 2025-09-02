@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LoadWin_BF1InstallPath" xml:space="preserve">
+    <value>战地1安装路径</value>
+  </data>
+  <data name="ToolsView_ClearModData" xml:space="preserve">
+    <value>清理Mod数据</value>
+  </data>
+  <data name="LoadWin_ClientMode" xml:space="preserve">
+    <value>客户端模式</value>
+  </data>
+  <data name="LaunchView_EnabledMod" xml:space="preserve">
+    <value>启用MOD</value>
+  </data>
+  <data name="ModWin_InstallModAndRunBF1Game" xml:space="preserve">
+    <value>安装MOD并启动战地1游戏</value>
+  </data>
+  <data name="ModWin_InstallModList" xml:space="preserve">
+    <value>安装MOD列表</value>
+  </data>
+  <data name="ToolsView_IPRedirect" xml:space="preserve">
+    <value>IP重定向</value>
+  </data>
+  <data name="ToolsView_KillBF1Process" xml:space="preserve">
+    <value>结束战地1进程</value>
+  </data>
+  <data name="LoadWin_DisplayLanguage" xml:space="preserve">
+    <value>显示语言</value>
+  </data>
+  <data name="ModWin_LastWriteTime" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="ModWin_FilePath" xml:space="preserve">
+    <value>文件路径</value>
+  </data>
+  <data name="LaunchView_Run" xml:space="preserve">
+    <value>启动</value>
+  </data>
+  <data name="LoadWin_RunMainApp" xml:space="preserve">
+    <value>启动主程序</value>
+  </data>
+  <data name="LoadWin_SelectPath" xml:space="preserve">
+    <value>选择BF1路径</value>
+  </data>
+  <data name="LoadWin_SelectBF1InstallPath" xml:space="preserve">
+    <value>请选择战地1游戏安装目录 "bf1.exe" 文件路径</value>
+  </data>
+  <data name="ModWin_SelectMods" xml:space="preserve">
+    <value>选择MOD</value>
+  </data>
+  <data name="LoadWin_ServerMode" xml:space="preserve">
+    <value>服务端模式</value>
+  </data>
+  <data name="ToolsView_ShowFPS" xml:space="preserve">
+    <value>显示FPS</value>
+  </data>
+  <data name="ModWin_Size" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="LaunchView_Stop" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="NameView_Website" xml:space="preserve">
+    <value>官网</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>战地1马恩工具箱</value>
+  </data>
+  <data name="LoadWin_WorkMode" xml:space="preserve">
+    <value>工作模式</value>
+  </data>
+  <data name="LocaleWin_BF1Language" xml:space="preserve">
+    <value>战地1语言</value>
+  </data>
+  <data name="LocaleWin_ChangeLanguage" xml:space="preserve">
+    <value>修改语言</value>
+  </data>
+  <data name="LocaleWin_English" xml:space="preserve">
+    <value>英语</value>
+  </data>
+  <data name="LocaleWin_French" xml:space="preserve">
+    <value>法语</value>
+  </data>
+  <data name="LocaleWin_German" xml:space="preserve">
+    <value>德语</value>
+  </data>
+  <data name="LocaleWin_SpanishSpain" xml:space="preserve">
+    <value>西班牙语 - 西班牙</value>
+  </data>
+  <data name="LocaleWin_SpanishMexico" xml:space="preserve">
+    <value>西班牙语 - 墨西哥</value>
+  </data>
+  <data name="LocaleWin_Italian" xml:space="preserve">
+    <value>意大利语</value>
+  </data>
+  <data name="LocaleWin_Russian" xml:space="preserve">
+    <value>俄语</value>
+  </data>
+  <data name="LocaleWin_Polish" xml:space="preserve">
+    <value>波兰语</value>
+  </data>
+  <data name="LocaleWin_Japanese" xml:space="preserve">
+    <value>日语</value>
+  </data>
+  <data name="LocaleWin_TChinese" xml:space="preserve">
+    <value>繁体中文</value>
+  </data>
+  <data name="LocaleWin_PortugueseBrazil" xml:space="preserve">
+    <value>葡萄牙语 - 巴西</value>
+  </data>
+  <data name="LocaleWin_Arabic" xml:space="preserve">
+    <value>阿拉伯语</value>
+  </data>
+  <data name="LocaleWin_Turkish" xml:space="preserve">
+    <value>土耳其语</value>
+  </data>
+  <data name="MainWin_SetLaunchAccount" xml:space="preserve">
+    <value>设置启动账号</value>
+  </data>
+  <data name="MainWin_SetGameLanguage" xml:space="preserve">
+    <value>设置游戏语言</value>
+  </data>
+  <data name="MainWin_OpenMarneFolder" xml:space="preserve">
+    <value>打开Marne目录</value>
+  </data>
+  <data name="MainWin_OpenCrashFolder" xml:space="preserve">
+    <value>打开Crash目录</value>
+  </data>
+  <data name="MainWin_OpenBF1Folder" xml:space="preserve">
+    <value>打开战地1目录</value>
+  </data>
+  <data name="MainWin_OpenConfigFolder" xml:space="preserve">
+    <value>打开配置目录</value>
+  </data>
+  <data name="MainWin_ShowWindow" xml:space="preserve">
+    <value>显示主窗口</value>
+  </data>
+  <data name="MainWin_ExitApp" xml:space="preserve">
+    <value>退出程序</value>
+  </data>
+  <data name="LogView_Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="LogView_Level" xml:space="preserve">
+    <value>等级</value>
+  </data>
+  <data name="LogView_Message" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="NameView_PlayerNameHint" xml:space="preserve">
+    <value>输入自定义玩家名称</value>
+  </data>
+  <data name="NameView_ChangePlayerName" xml:space="preserve">
+    <value>修改玩家名称</value>
+  </data>
+  <data name="DialogWin_Enter" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="DialogWin_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="AccountWin_EnterAccount" xml:space="preserve">
+    <value>确认账号</value>
+  </data>
+  <data name="AccountWin_Email" xml:space="preserve">
+    <value>EA账号邮箱</value>
+  </data>
+  <data name="AccountWin_Password" xml:space="preserve">
+    <value>EA账号密码</value>
+  </data>
+  <data name="AccountWin_EmailHint" xml:space="preserve">
+    <value>输入拥有战地1游戏的EA账号的邮箱</value>
+  </data>
+  <data name="AccountWin_PasswordHint" xml:space="preserve">
+    <value>输入拥有战地1游戏的EA账号的密码</value>
+  </data>
+  <data name="LoadWin_BeginInitializeResources" xml:space="preserve">
+    <value>开始初始化资源数据...</value>
+  </data>
+  <data name="LoadWin_ClosingOtherServiceProcess" xml:space="preserve">
+    <value>正在关闭其它服务进程...</value>
+  </data>
+  <data name="LoadWin_OtherServiceProcessClosedSuccess" xml:space="preserve">
+    <value>其它服务进程，关闭成功</value>
+  </data>
+  <data name="LoadWin_ResourceFileFrostyCheckPassed" xml:space="preserve">
+    <value>资源文件 Frosty 检查通过</value>
+  </data>
+  <data name="LoadWin_ResourceFileMarneCheckPassed" xml:space="preserve">
+    <value>资源文件 Marne 检查通过</value>
+  </data>
+  <data name="LoadWin_ResourceFileServiceCheckPassed" xml:space="preserve">
+    <value>资源文件 Service 检查通过</value>
+  </data>
+  <data name="LoadWin_ExtractingResourceFileFrostyZip" xml:space="preserve">
+    <value>正在提取资源文件 Frosty.zip ...</value>
+  </data>
+  <data name="LoadWin_ExtractingResourceFileMarneZip" xml:space="preserve">
+    <value>正在提取资源文件 Marne.zip ...</value>
+  </data>
+  <data name="LoadWin_ExtractingResourceFileServiceZip" xml:space="preserve">
+    <value>正在提取资源文件 Service.zip ...</value>
+  </data>
+  <data name="LoadWin_UnzippingTheFileFrostyZip" xml:space="preserve">
+    <value>正在解压文件 Frosty.zip ...</value>
+  </data>
+  <data name="LoadWin_UnzippingTheFileMarneZip" xml:space="preserve">
+    <value>正在解压文件 Marne.zip ...</value>
+  </data>
+  <data name="LoadWin_UnzippingTheFileServiceZip" xml:space="preserve">
+    <value>正在解压文件 Service.zip ...</value>
+  </data>
+  <data name="LoadWin_AppResourcesDataInitializeSuccess" xml:space="preserve">
+    <value>程序资源数据，初始化成功</value>
+  </data>
+  <data name="LocaleWin_NotFoundBF1RegLangInfo" xml:space="preserve">
+    <value>未找到战地1注册表语言信息</value>
+  </data>
+  <data name="LocaleWin_GetBF1RegLangInfoException" xml:space="preserve">
+    <value>获取BF1注册表语言信息时出现异常</value>
+  </data>
+  <data name="LocaleWin_GetBF1RegLangInfoSuccess" xml:space="preserve">
+    <value>获取BF1注册表语言信息成功</value>
+  </data>
+  <data name="LocaleWin_ChangeBF1RegLangInfoSuccess" xml:space="preserve">
+    <value>修改战地1注册表语言信息成功</value>
+  </data>
+  <data name="LocaleWin_PlayerNotSelectBF1LangInfoTaskCanceled" xml:space="preserve">
+    <value>玩家未选择战地1语言信息，操作取消</value>
+  </data>
+  <data name="LocaleWin_ChangeBF1RegLangInfoException" xml:space="preserve">
+    <value>修改BF1注册表语言信息时出现异常</value>
+  </data>
+  <data name="LoadWin_OpenConfigFolder" xml:space="preserve">
+    <value>打开配置目录</value>
+  </data>
+  <data name="LoadWin_Website" xml:space="preserve">
+    <value>官网</value>
+  </data>
+  <data name="LoadWin_ResourceInitializeException" xml:space="preserve">
+    <value>资源初始化时出现异常</value>
+  </data>
+  <data name="LoadWin_FileDialogTitle" xml:space="preserve">
+    <value>请选择战地1游戏安装目录 "bf1.exe" 文件路径</value>
+  </data>
+  <data name="LoadWin_FileDialogFilter" xml:space="preserve">
+    <value>可执行文件 (.exe)|*.exe</value>
+  </data>
+  <data name="LoadWin_NoSupportBF1Version" xml:space="preserve">
+    <value>不支持的战地1游戏版本，请重新选择</value>
+  </data>
+  <data name="LoadWin_BF1VersionCheckPassed" xml:space="preserve">
+    <value>战地1游戏版本，检查通过</value>
+  </data>
+  <data name="LoadWin_BF1InstallDiskNotNTFS" xml:space="preserve">
+    <value>战地1安装磁盘格式不是NTFS，请转换磁盘格式</value>
+  </data>
+  <data name="LoadWin_BF1InstallDiskCheckPassed" xml:space="preserve">
+    <value>战地1安装磁盘格式，检查通过</value>
+  </data>
+  <data name="LoadWin_GetBF1ExePathSuccess" xml:space="preserve">
+    <value>BF1游戏主程序路径，获取成功</value>
+  </data>
+  <data name="LoadWin_SelectBF1PathException" xml:space="preserve">
+    <value>选择战地1安装路径时出现异常</value>
+  </data>
+  <data name="App_Welcome" xml:space="preserve">
+    <value>欢迎使用</value>
+  </data>
+  <data name="App_NotRunAgain" xml:space="preserve">
+    <value>请不要重复打开，程序已经运行</value>
+  </data>
+  <data name="App_Port3216Warning" xml:space="preserve">
+    <value>检测到 TCP端口 3216 被占用，请解除端口占用</value>
+  </data>
+  <data name="App_Port59743Warning" xml:space="preserve">
+    <value>检测到 TCP端口 59743 被占用，请解除端口占用</value>
+  </data>
+  <data name="App_CheckingPort" xml:space="preserve">
+    <value>正在进行 TCP端口 可用性检测...</value>
+  </data>
+  <data name="App_CheckPortPassed" xml:space="preserve">
+    <value>当前系统 TCP端口 检测正常</value>
+  </data>
+  <data name="App_Close" xml:space="preserve">
+    <value>程序已关闭</value>
+  </data>
+  <data name="GameUtil_IsCheckBF1Running" xml:space="preserve">
+    <value>战地1正在运行，请先关闭游戏</value>
+  </data>
+  <data name="GameUtil_IsCheckBF1NotRun" xml:space="preserve">
+    <value>未发现战地1进程，操作取消</value>
+  </data>
+  <data name="GameUtil_IsCheckFrostyModManagerRunning" xml:space="preserve">
+    <value>FrostyModManager正在运行，请不要重复启动</value>
+  </data>
+  <data name="GameUtil_IsCheckFrostyModManagerRunning2" xml:space="preserve">
+    <value>FrostyModManager正在运行，请先关闭程序</value>
+  </data>
+  <data name="GameUtil_IsCheckMarneLauncherRunning" xml:space="preserve">
+    <value>MarneLauncher正在运行，请不要重复启动</value>
+  </data>
+  <data name="MiscUtil_VersionInfo" xml:space="preserve">
+    <value>程序版本</value>
+  </data>
+  <data name="MiscUtil_UserName" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="MiscUtil_MachineName" xml:space="preserve">
+    <value>电脑名称</value>
+  </data>
+  <data name="MiscUtil_OSVersion" xml:space="preserve">
+    <value>系统版本</value>
+  </data>
+  <data name="MiscUtil_SystemDirectory" xml:space="preserve">
+    <value>系统目录</value>
+  </data>
+  <data name="MiscUtil_RuntimeVersion" xml:space="preserve">
+    <value>运行库平台</value>
+  </data>
+  <data name="MiscUtil_OSArchitecture" xml:space="preserve">
+    <value>运行库版本</value>
+  </data>
+  <data name="MiscUtil_RuntimeIdentifier" xml:space="preserve">
+    <value>运行库环境</value>
+  </data>
+  <data name="MiscUtil_CrashTime" xml:space="preserve">
+    <value>崩溃时间</value>
+  </data>
+  <data name="MiscUtil_ExceptionType" xml:space="preserve">
+    <value>异常类型</value>
+  </data>
+  <data name="MiscUtil_ExceptionMsg" xml:space="preserve">
+    <value>异常信息</value>
+  </data>
+  <data name="MiscUtil_StackTrace" xml:space="preserve">
+    <value>堆栈调用</value>
+  </data>
+  <data name="MiscUtil_UnhandledException" xml:space="preserve">
+    <value>未处理异常</value>
+  </data>
+  <data name="MainWin_DownloadUpdate" xml:space="preserve">
+    <value>下载新版本</value>
+  </data>
+  <data name="MainWin_RunMainAppSuccess" xml:space="preserve">
+    <value>启动主程序成功</value>
+  </data>
+  <data name="MainWin_NotifyBalloonMsg" xml:space="preserve">
+    <value>可通过托盘右键菜单完全退出程序</value>
+  </data>
+  <data name="MainWin_CloseSuccess" xml:space="preserve">
+    <value>关闭主程序成功</value>
+  </data>
+  <data name="MainWin_CheckNewVersion" xml:space="preserve">
+    <value>正在检测新版本中...</value>
+  </data>
+  <data name="NotifierHelper_Information" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="NotifierHelper_Success" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="NotifierHelper_Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="NotifierHelper_Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="NotifierHelper_Notification" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="MainWin_CheckUpdateFailed" xml:space="preserve">
+    <value>检测新版本失败，请检查网络连接</value>
+  </data>
+  <data name="MainWin_CheckUpdateRetry" xml:space="preserve">
+    <value>检测新版本失败，重试中...</value>
+  </data>
+  <data name="MainWin_CheckNoUpdate" xml:space="preserve">
+    <value>你当前使用的已是最新版本</value>
+  </data>
+  <data name="MainWin_CheckNeedUpdate" xml:space="preserve">
+    <value>发现新版本，请下载更新</value>
+  </data>
+  <data name="AccountWin_Note" xml:space="preserve">
+    <value>提示：请输入任意拥有战地1游戏的EA账号邮箱和密码，即使这个账号被协议6封禁，或者被EAAC或FF封禁。只需要账号拥有战地1游戏即可，无论游戏版本，主要是为了让EA下发战地1的「Denuvo加密」许可证，否则无法启动游戏。</value>
+  </data>
+  <data name="ModWin_ReadConfigException" xml:space="preserve">
+    <value>读取Mod配置信息出现异常</value>
+  </data>
+  <data name="ModWin_FileDialogTitle" xml:space="preserve">
+    <value>请选择要安装的战地1寒霜Mod文件（支持多选）</value>
+  </data>
+  <data name="ModWin_FileDialogFilter" xml:space="preserve">
+    <value>寒霜Mod文件 (.fbmod)|*.fbmod</value>
+  </data>
+  <data name="ModWin_ClearOldMods" xml:space="preserve">
+    <value>清空旧版Mod文件成功</value>
+  </data>
+  <data name="ModWin_SelectModsException" xml:space="preserve">
+    <value>选择安装Mods出现异常</value>
+  </data>
+  <data name="ModWin_WriteConfigFrostyModManager" xml:space="preserve">
+    <value>写入FrostyModManager配置文件成功</value>
+  </data>
+  <data name="ModWin_LaunchFrostyModManager" xml:space="preserve">
+    <value>正在启动FrostyModManager中...</value>
+  </data>
+  <data name="ModWin_InstallModsException" xml:space="preserve">
+    <value>安装Mod出现异常</value>
+  </data>
+  <data name="NameView_InitializePlayerNameException" xml:space="preserve">
+    <value>初始化自定义玩家名称出现异常</value>
+  </data>
+  <data name="NameView_PlayerNameNoEmpty" xml:space="preserve">
+    <value>玩家名称不能为空，请重新修改</value>
+  </data>
+  <data name="NameView_PlayerNameMax15Bytes" xml:space="preserve">
+    <value>玩家名称不能超过15字节，请重新修改</value>
+  </data>
+  <data name="NameView_PlayerNameChangeSuccess" xml:space="preserve">
+    <value>修改玩家名称成功，请启动游戏查看</value>
+  </data>
+  <data name="NameView_ChangePlayerNameException" xml:space="preserve">
+    <value>修改玩家名称出现异常</value>
+  </data>
+  <data name="ToolsView_Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="ToolsView_ClearModDataWarning" xml:space="preserve">
+    <value>你确定要清理《战地1》Mod数据吗？</value>
+  </data>
+  <data name="ToolsView_ClearModDataNotFound" xml:space="preserve">
+    <value>未发现战地1Mod数据文件夹，操作取消</value>
+  </data>
+  <data name="ToolsView_ClearModDataSuccess" xml:space="preserve">
+    <value>清理Mod数据操作成功</value>
+  </data>
+  <data name="ToolsView_ClearModDataException" xml:space="preserve">
+    <value>清理Mod数据出现异常</value>
+  </data>
+  <data name="ToolsView_KillBf1ProcessWarning" xml:space="preserve">
+    <value>你确定要结束《战地1》进程吗？</value>
+  </data>
+  <data name="ToolsView_KillBF1ProcessSuccess" xml:space="preserve">
+    <value>结束战地1进程操作成功</value>
+  </data>
+  <data name="FileHelper_ClearDirectorySuccess" xml:space="preserve">
+    <value>清空文件夹成功</value>
+  </data>
+  <data name="FileHelper_ClearDirectoryException" xml:space="preserve">
+    <value>清空文件夹出现异常</value>
+  </data>
+  <data name="FileHelper_ExtractResFileSuccess" xml:space="preserve">
+    <value>提取资源文件成功</value>
+  </data>
+  <data name="FileHelper_ExtractResFileException" xml:space="preserve">
+    <value>提取资源文件出现异常</value>
+  </data>
+  <data name="EaWatchDog_NotAgainRun" xml:space="preserve">
+    <value>EA看门狗服务正在运行，请勿重复启动</value>
+  </data>
+  <data name="EaWatchDog_RunSuccess" xml:space="preserve">
+    <value>启动EA看门狗服务成功</value>
+  </data>
+  <data name="EaWatchDog_StopSuccess" xml:space="preserve">
+    <value>停止EA看门狗服务成功</value>
+  </data>
+  <data name="EaWatchDog_Cancellation" xml:space="preserve">
+    <value>EA看门狗服务已取消</value>
+  </data>
+  <data name="EaWatchDog_KillOriginSuccess" xml:space="preserve">
+    <value>结束Origin进程树成功</value>
+  </data>
+  <data name="EaWatchDog_KillEADesktopSuccess" xml:space="preserve">
+    <value>结束EADesktop进程树成功</value>
+  </data>
+  <data name="EaWatchDog_Exception" xml:space="preserve">
+    <value>EA看门狗任务出现异常</value>
+  </data>
+  <data name="Launch_GamePathNotEmpty" xml:space="preserve">
+    <value>战地1游戏路径为空，操作取消</value>
+  </data>
+  <data name="Launch_LaunchingGame" xml:space="preserve">
+    <value>正在启动战地1游戏中...</value>
+  </data>
+  <data name="Launch_LaunchGameSuccess" xml:space="preserve">
+    <value>启动战地1游戏成功</value>
+  </data>
+  <data name="Launch_LaunchGameException" xml:space="preserve">
+    <value>启动战地1游戏出现异常</value>
+  </data>
+  <data name="LocalHttpServer_NotAgainRun" xml:space="preserve">
+    <value>Local HTTP 服务正在运行，请勿重复启动</value>
+  </data>
+  <data name="LocalHttpServer_RunSuccess" xml:space="preserve">
+    <value>启动 Local HTTP 服务成功</value>
+  </data>
+  <data name="LocalHttpServer_StopSuccess" xml:space="preserve">
+    <value>停止 Local HTTP 服务成功</value>
+  </data>
+  <data name="LocalHttpServer_ReceiveGetRequest" xml:space="preserve">
+    <value>收到 Local HTTP GET请求</value>
+  </data>
+  <data name="LocalHttpServer_RequestInfo" xml:space="preserve">
+    <value>请求的客户端为</value>
+  </data>
+  <data name="LocalHttpServer_ReceivePostRequest" xml:space="preserve">
+    <value>收到 Local HTTP POST请求</value>
+  </data>
+  <data name="LocalHttpServer_HandleRequestException" xml:space="preserve">
+    <value>处理 Local HTTP 请求出现异常</value>
+  </data>
+  <data name="Ready_RunService" xml:space="preserve">
+    <value>正在启动服务进程...</value>
+  </data>
+  <data name="Ready_RunLSXService" xml:space="preserve">
+    <value>正在启动 LSX 服务...</value>
+  </data>
+  <data name="Ready_RunLocalHttpService" xml:space="preserve">
+    <value>正在启动 Local HTTP 服务...</value>
+  </data>
+  <data name="Ready_RunEaWatchDogService" xml:space="preserve">
+    <value>正在启动EA看门狗服务...</value>
+  </data>
+  <data name="Ready_RunServiceException" xml:space="preserve">
+    <value>启动核心服务出现异常</value>
+  </data>
+  <data name="Ready_StopLocalHttpService" xml:space="preserve">
+    <value>正在停止 Local HTTP 服务...</value>
+  </data>
+  <data name="Ready_StopLSXService" xml:space="preserve">
+    <value>正在停止 LSX 服务...</value>
+  </data>
+  <data name="Ready_StopEaWatchDogService" xml:space="preserve">
+    <value>正在停止EA看门狗服务...</value>
+  </data>
+  <data name="Ready_StopServiceException" xml:space="preserve">
+    <value>停止核心服务出现异常</value>
+  </data>
+  <data name="RegistryHelper_WriteEADesktopVirtualRegSuccess" xml:space="preserve">
+    <value>写入注册表 EADesktop 虚拟安装路径成功</value>
+  </data>
+  <data name="RegistryHelper_WriteEADesktopVirtualRegException" xml:space="preserve">
+    <value>写入注册表 EADesktop 虚拟安装路径出现异常</value>
+  </data>
+  <data name="RegistryHelper_ReadException" xml:space="preserve">
+    <value>读取注册表出现异常</value>
+  </data>
+  <data name="RegistryHelper_WriteException" xml:space="preserve">
+    <value>写入注册表出现异常</value>
+  </data>
+  <data name="ProcessHelper_HttpFormatError" xml:space="preserve">
+    <value>链接不是http格式</value>
+  </data>
+  <data name="ProcessHelper_OpenHttpException" xml:space="preserve">
+    <value>打开http链接出现异常</value>
+  </data>
+  <data name="ProcessHelper_OpenDirectoryNotExists" xml:space="preserve">
+    <value>文件夹路径不存在</value>
+  </data>
+  <data name="ProcessHelper_OpenDirectoryException" xml:space="preserve">
+    <value>打开文件夹出现异常</value>
+  </data>
+  <data name="ProcessHelper_OpenProcessNotExists" xml:space="preserve">
+    <value>程序路径不存在</value>
+  </data>
+  <data name="ProcessHelper_OpenProcessException" xml:space="preserve">
+    <value>启动程序出现异常</value>
+  </data>
+  <data name="ProcessHelper_OpenProcessSuccess" xml:space="preserve">
+    <value>启动程序成功</value>
+  </data>
+  <data name="ProcessHelper_CloseProcessSuccess" xml:space="preserve">
+    <value>关闭进程成功</value>
+  </data>
+  <data name="ProcessHelper_CloseProcessNotFound" xml:space="preserve">
+    <value>未找到进程信息</value>
+  </data>
+  <data name="ProcessHelper_CloseProcessException" xml:space="preserve">
+    <value>关闭进程出现异常</value>
+  </data>
+  <data name="JsonHelper_DeserializeException" xml:space="preserve">
+    <value>反序列化出现异常</value>
+  </data>
+  <data name="JsonHelper_SerializeException" xml:space="preserve">
+    <value>序列化出现异常</value>
+  </data>
+  <data name="MsgBoxHelper_Information" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="MsgBoxHelper_Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="MsgBoxHelper_Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="MsgBoxHelper_Exception" xml:space="preserve">
+    <value>异常</value>
+  </data>
+  <data name="MsgBoxHelper_ExceptionMsg" xml:space="preserve">
+    <value>发生了未知的异常，查看异常提示以获取更多信息\n\n异常消息:\n</value>
+  </data>
+  <data name="Globals_ReadConfig" xml:space="preserve">
+    <value>开始读取配置文件...</value>
+  </data>
+  <data name="Globals_ReadConfigSuccess" xml:space="preserve">
+    <value>读取配置文件成功</value>
+  </data>
+  <data name="Globals_SaveConfig" xml:space="preserve">
+    <value>开始保存配置文件...</value>
+  </data>
+  <data name="Globals_SaveConfigSuccess" xml:space="preserve">
+    <value>保存配置文件成功</value>
+  </data>
+  <data name="Globals_BF1PathFind" xml:space="preserve">
+    <value>已找到战地1安装路径</value>
+  </data>
+  <data name="Globals_BF1PathNotFind" xml:space="preserve">
+    <value>未找到战地1安装路径，请手动选择</value>
+  </data>
+  <data name="EaApi_ResponseStatus" xml:space="preserve">
+    <value>请求结束，状态</value>
+  </data>
+  <data name="EaApi_StatusCode" xml:space="preserve">
+    <value>请求结束，状态码</value>
+  </data>
+  <data name="EaApi_TimeOut" xml:space="preserve">
+    <value>请求超时</value>
+  </data>
+  <data name="EaApi_Exception" xml:space="preserve">
+    <value>请求出现异常</value>
+  </data>
+  <data name="EaApi_RequestFailed" xml:space="preserve">
+    <value>请求失败，返回结果</value>
+  </data>
+  <data name="EaApi_GetLicenseFailed" xml:space="preserve">
+    <value>获取 License 失败</value>
+  </data>
+  <data name="EaApi_GetLicenseSuccess" xml:space="preserve">
+    <value>获取 License 成功</value>
+  </data>
+  <data name="CoreApi_ResponseStatus" xml:space="preserve">
+    <value>请求结束，状态</value>
+  </data>
+  <data name="CoreApi_StatusCode" xml:space="preserve">
+    <value>请求结束，状态码</value>
+  </data>
+  <data name="CoreApi_TimedOut" xml:space="preserve">
+    <value>请求超时</value>
+  </data>
+  <data name="CoreApi_GetUpdateVersionSuccess" xml:space="preserve">
+    <value>获取服务器更新版本号成功</value>
+  </data>
+  <data name="CoreApi_GetUpdateVersionFailed" xml:space="preserve">
+    <value>获取服务器更新版本号失败</value>
+  </data>
+  <data name="CoreApi_GetUpdateVersionException" xml:space="preserve">
+    <value>获取服务器更新版本号出现异常</value>
+  </data>
+  <data name="LSXTcpServer_RunSuccess" xml:space="preserve">
+    <value>启动 LSX 服务成功</value>
+  </data>
+  <data name="LSXTcpServer_StopSuccess" xml:space="preserve">
+    <value>停止 LSX 服务成功</value>
+  </data>
+  <data name="LSXTcpServer_ContentId" xml:space="preserve">
+    <value>本次启动 ContentId 为</value>
+  </data>
+  <data name="LSXTcpServer_HandleLaunch" xml:space="preserve">
+    <value>正在处理启动游戏请求...</value>
+  </data>
+  <data name="LaunchView_FrostyModManagerDesc" xml:space="preserve">
+    <value>用于安装寒霜Mod和启动战地1工具，支持多个Mod安装，支持拖拽排序，一键安装Mod无需其它繁琐操作</value>
+  </data>
+  <data name="LaunchView_MarneLauncherDesc" xml:space="preserve">
+    <value>用于启动本地战地1服务器或加入其它公共服务器，支持Mod联机，支持局域网联机</value>
+  </data>
+  <data name="ToolsView_EditServerSettings" xml:space="preserve">
+    <value>编辑服务器设置</value>
+  </data>
+  <data name="ToolsView_EditMapList" xml:space="preserve">
+    <value>编辑地图列表</value>
+  </data>
+  <data name="SettingWin_InitSettingException" xml:space="preserve">
+    <value>初始化服务器设置出现异常</value>
+  </data>
+  <data name="SettingWin_ReadSettingException" xml:space="preserve">
+    <value>读取服务器设置出现异常</value>
+  </data>
+  <data name="SettingWin_SaveSettingException" xml:space="preserve">
+    <value>保存服务器设置出现异常</value>
+  </data>
+  <data name="SettingWin_ReadSettingSuccess" xml:space="preserve">
+    <value>读取服务器设置成功</value>
+  </data>
+  <data name="SettingWin_SaveSettingSuccess" xml:space="preserve">
+    <value>保存服务器设置成功</value>
+  </data>
+  <data name="SettingWin_SettingPath" xml:space="preserve">
+    <value>服务器设置文件路径为</value>
+  </data>
+  <data name="SettingWin_ReadSetting" xml:space="preserve">
+    <value>读取设置</value>
+  </data>
+  <data name="SettingWin_SaveSetting" xml:space="preserve">
+    <value>保存设置</value>
+  </data>
+  <data name="MapWin_SaveMapList" xml:space="preserve">
+    <value>保存地图列表</value>
+  </data>
+  <data name="MapWin_AddMap" xml:space="preserve">
+    <value>添加地图</value>
+  </data>
+  <data name="MapWin_DeleteMap" xml:space="preserve">
+    <value>删除地图</value>
+  </data>
+  <data name="MapWin_ClearMapList" xml:space="preserve">
+    <value>清空地图列表</value>
+  </data>
+  <data name="MapWin_InitMapException" xml:space="preserve">
+    <value>初始化地图列表出现异常</value>
+  </data>
+  <data name="MapWin_SaveMapSuccess" xml:space="preserve">
+    <value>保存地图列表成功</value>
+  </data>
+  <data name="MapWin_MapListPath" xml:space="preserve">
+    <value>地图列表文件路径为</value>
+  </data>
+  <data name="MapWin_SaveMapListException" xml:space="preserve">
+    <value>保存地图列表出现异常</value>
+  </data>
+  <data name="SettingWin_UseDefaultSetting" xml:space="preserve">
+    <value>使用默认设置</value>
+  </data>
+  <data name="LSXTcpServer_WarnGameClose" xml:space="preserve">
+    <value>警告: 战地1游戏客户端已被关闭</value>
+  </data>
+  <data name="LSXTcpServer_NotAgainRun" xml:space="preserve">
+    <value>LSX 服务正在运行，请勿重复启动</value>
+  </data>
+  <data name="LSXTcpServer_AsyncReadStringException" xml:space="preserve">
+    <value>异步读取 TCP 字符串时出现异常</value>
+  </data>
+  <data name="LSXTcpServer_HandleClientConnectException" xml:space="preserve">
+    <value>处理 TCP 客户端连接出现异常</value>
+  </data>
+  <data name="LSXTcpServer_HandleClientBattlelogConnectException" xml:space="preserve">
+    <value>处理 TCP Battlelog 客户端连接出现超时异常</value>
+  </data>
+</root>

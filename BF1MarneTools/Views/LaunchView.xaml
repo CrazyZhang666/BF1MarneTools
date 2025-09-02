@@ -1,0 +1,79 @@
+﻿<UserControl
+    x:Class="BF1MarneTools.Views.LaunchView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:res="clr-namespace:BF1MarneTools.Resources"
+    xmlns:root="clr-namespace:BF1MarneTools"
+    xmlns:ui="http://wpf.microsoft.com/ui/2025/xaml"
+    xmlns:views="clr-namespace:BF1MarneTools.Views"
+    d:DesignHeight="160"
+    d:DesignWidth="850"
+    DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.2*" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <!--  分区一  -->
+        <ui:CardMenu
+            Title="Frosty Mod Manager"
+            Grid.Column="0"
+            Margin="5,5,5,0"
+            Description="{x:Static res:Lang.LaunchView_FrostyModManagerDesc}"
+            Source="pack://application:,,,/BF1MarneTools;component/Assets/Images/FrostyModManager.png">
+            <ui:CardMenu.CardContent>
+                <WrapPanel HorizontalAlignment="Right">
+                    <ToggleButton
+                        Margin="5,5,5,0"
+                        Content="{x:Static res:Lang.LaunchView_EnabledMod}"
+                        IsChecked="{Binding Path=(root:Globals.IsUseMod)}" />
+                    <!--  //////  -->
+                    <ui:IconButton
+                        Margin="5,5,0,0"
+                        Command="{Binding RunFrostyModManagerCommand}"
+                        Content="{x:Static res:Lang.LaunchView_Run}"
+                        Icon="&#xE768;" />
+                    <ui:IconButton
+                        Margin="5,5,0,0"
+                        Command="{Binding CloseFrostyModManagerCommand}"
+                        Content="{x:Static res:Lang.LaunchView_Stop}"
+                        Icon="&#xF78A;" />
+                </WrapPanel>
+            </ui:CardMenu.CardContent>
+        </ui:CardMenu>
+
+        <!--  分区二  -->
+        <ui:CardMenu
+            Title="Marne Launcher"
+            Grid.Column="1"
+            Margin="0,5,0,0"
+            Description="{x:Static res:Lang.LaunchView_MarneLauncherDesc}"
+            Source="pack://application:,,,/BF1MarneTools;component/Assets/Images/MarneLauncher.png">
+            <ui:CardMenu.CardContent>
+                <WrapPanel HorizontalAlignment="Right">
+                    <ui:IconButton
+                        Margin="5,5,0,0"
+                        Command="{Binding RunMarneLauncherCommand}"
+                        Content="{x:Static res:Lang.LaunchView_Run}"
+                        Icon="&#xE768;" />
+                    <ui:IconButton
+                        Margin="5,5,0,0"
+                        Command="{Binding CloseMarneLauncherCommand}"
+                        Content="{x:Static res:Lang.LaunchView_Stop}"
+                        Icon="&#xF78A;" />
+                </WrapPanel>
+            </ui:CardMenu.CardContent>
+        </ui:CardMenu>
+
+        <!--  分区三  -->
+        <views:NameView Grid.Column="2" Margin="5,5,5,0" />
+
+    </Grid>
+
+</UserControl>
