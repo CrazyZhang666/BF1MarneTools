@@ -202,8 +202,8 @@ public static class CoreUtil
     /// </summary>
     public static async Task<bool> IsMD5CheckMarne()
     {
-        const string MD5_MarneLauncher = "F31DC08B845889EE1AE593855A6F6C04";
-        const string MD5_MarneDll = "778BA8485BBFE2E00A1117EF2219095F";
+        const string MD5_MarneLauncher = "A231A1EA220CFEDE4FEA01AC6EA6BC2F";
+        const string MD5_MarneDll = "22685DE76774776F2A02D105BDD269D9";
 
         var md5 = await FileHelper.GetFileMD5(File_Marne_MarneLauncher);
         if (md5 != MD5_MarneLauncher)
