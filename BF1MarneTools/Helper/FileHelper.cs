@@ -21,9 +21,8 @@ public static class FileHelper
     /// <summary>
     /// 创建文件夹（如果存在则跳过）
     /// </summary>
-    public static void CreateDirectory(string filePath)
+    public static void CreateDirectory(string dirPath)
     {
-        var dirPath = Path.GetDirectoryName(filePath);
         if (Directory.Exists(dirPath))
             return;
 
