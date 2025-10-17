@@ -19,12 +19,14 @@ public static class FileHelper
     public static readonly UTF8Encoding Encoding_UTF8_NoBOM = new(false);
 
     /// <summary>
-    /// 创建文件夹（如果存在则跳过）
+    /// 创建文件夹
     /// </summary>
-    public static void CreateDirectory(string dirPath)
+    public static void CreateDirectory(string targetPath)
     {
-        if (Directory.Exists(dirPath))
-            return;
+        var dirPath = targetPath;
+        // 判断是文件还是文件夹
+        if (Path.HasExtension(targetPath))
+            dirPath = Path.GetDirectoryName(targetPath);
 
         Directory.CreateDirectory(dirPath);
     }
