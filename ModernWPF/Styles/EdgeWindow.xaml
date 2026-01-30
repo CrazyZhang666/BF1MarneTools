@@ -1,0 +1,290 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:ModernWPF.Controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/ModernWPF;component/Styles/Base.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  系统窗口样式  -->
+    <Style x:Key="EdgeWindowStyle" TargetType="{x:Type controls:EdgeWindow}">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="BorderBrush" Value="{StaticResource EdgeWindow_BorderBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource EdgeWindow_Foreground}" />
+        <Setter Property="Background" Value="{StaticResource EdgeWindow_Background}" />
+        <Setter Property="CaptionBackground" Value="{StaticResource EdgeWindow_CaptionBackground}" />
+        <Setter Property="IsShowMaskLayer" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:EdgeWindow}">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="1"
+                        SnapsToDevicePixels="True">
+                        <Grid x:Name="WorkArea">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <!--  主体内容区  -->
+                            <AdornerDecorator Grid.Row="1">
+                                <ContentPresenter />
+                            </AdornerDecorator>
+                            <!--  标题栏  -->
+                            <Grid Height="{TemplateBinding CaptionHeight}" Background="{TemplateBinding CaptionBackground}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image
+                                        Width="18"
+                                        Height="18"
+                                        Margin="7,0,0,0"
+                                        VerticalAlignment="Center"
+                                        RenderOptions.BitmapScalingMode="HighQuality"
+                                        Source="{TemplateBinding Icon}" />
+                                    <TextBlock
+                                        Margin="7,0,0,0"
+                                        VerticalAlignment="Center"
+                                        Text="{TemplateBinding Title}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Column="1"
+                                    Orientation="Horizontal"
+                                    SnapsToDevicePixels="True"
+                                    WindowChrome.IsHitTestVisibleInChrome="True">
+                                    <controls:WinButton
+                                        x:Name="ButtonMin"
+                                        Command="SystemCommands.MinimizeWindowCommand"
+                                        Icon="&#xE921;"
+                                        ToolTip="最小化" />
+                                    <controls:WinButton
+                                        x:Name="ButtonMax"
+                                        Command="SystemCommands.MaximizeWindowCommand"
+                                        Icon="&#xE922;"
+                                        ToolTip="最大化" />
+                                    <controls:WinButton
+                                        x:Name="ButtonRestore"
+                                        Command="SystemCommands.RestoreWindowCommand"
+                                        Icon="&#xE923;"
+                                        ToolTip="向下还原" />
+                                    <controls:WinButton
+                                        x:Name="ButtonClose"
+                                        Command="SystemCommands.CloseWindowCommand"
+                                        Icon="&#xE8bb;"
+                                        Style="{DynamicResource WinButtonStyle_Close}"
+                                        ToolTip="关闭" />
+                                </StackPanel>
+                            </Grid>
+                            <!--  遮罩层  -->
+                            <Border
+                                x:Name="MaskLayer"
+                                Grid.RowSpan="2"
+                                Background="Black"
+                                IsHitTestVisible="False"
+                                Opacity="0" />
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="WindowState" Value="Maximized">
+                            <Setter TargetName="WorkArea" Property="MaxWidth" Value="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}" />
+                            <Setter TargetName="WorkArea" Property="MaxHeight" Value="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Height}" />
+                            <Setter TargetName="ButtonMax" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="ButtonRestore" Property="Visibility" Value="Visible" />
+                        </Trigger>
+                        <Trigger Property="WindowState" Value="Normal">
+                            <Setter TargetName="ButtonMax" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="ButtonRestore" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="ResizeMode" Value="NoResize">
+                            <Setter TargetName="ButtonMin" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="ButtonMax" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="ButtonRestore" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="ResizeMode" Value="CanMinimize">
+                            <Setter TargetName="ButtonMax" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="ButtonRestore" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsShowMaskLayer}" Value="True">
+                            <DataTrigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            BeginTime="00:00:00"
+                                            Storyboard.TargetName="MaskLayer"
+                                            Storyboard.TargetProperty="Opacity"
+                                            From="0"
+                                            To="0.5"
+                                            Duration="00:00:0.2">
+                                            <DoubleAnimation.EasingFunction>
+                                                <PowerEase EasingMode="EaseInOut" />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </DataTrigger.EnterActions>
+                            <DataTrigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            BeginTime="00:00:00"
+                                            Storyboard.TargetName="MaskLayer"
+                                            Storyboard.TargetProperty="Opacity"
+                                            From="0.5"
+                                            To="0"
+                                            Duration="00:00:0.2">
+                                            <DoubleAnimation.EasingFunction>
+                                                <PowerEase EasingMode="EaseInOut" />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </DataTrigger.ExitActions>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--  自定义系统窗口样式  -->
+    <Style x:Key="CustomEdgeWindowStyle" TargetType="{x:Type controls:EdgeWindow}">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="BorderBrush" Value="{StaticResource EdgeWindow_BorderBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource EdgeWindow_Foreground}" />
+        <Setter Property="Background" Value="{StaticResource EdgeWindow_Background}" />
+        <Setter Property="CaptionBackground" Value="{StaticResource EdgeWindow_CaptionBackground}" />
+        <Setter Property="IsShowMaskLayer" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:EdgeWindow}">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="1"
+                        SnapsToDevicePixels="True">
+                        <Grid x:Name="WorkArea">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <!--  主体内容区  -->
+                            <AdornerDecorator Grid.Row="1">
+                                <ContentPresenter />
+                            </AdornerDecorator>
+                            <!--  标题栏  -->
+                            <Grid Height="{TemplateBinding CaptionHeight}" Background="{TemplateBinding CaptionBackground}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <ContentPresenter Content="{TemplateBinding CaptionContent}" />
+                                <StackPanel
+                                    Grid.Column="1"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Top"
+                                    Orientation="Horizontal"
+                                    SnapsToDevicePixels="True"
+                                    WindowChrome.IsHitTestVisibleInChrome="True">
+                                    <controls:WinButton
+                                        x:Name="ButtonMin"
+                                        Command="SystemCommands.MinimizeWindowCommand"
+                                        Icon="&#xE921;"
+                                        ToolTip="最小化" />
+                                    <controls:WinButton
+                                        x:Name="ButtonMax"
+                                        Command="SystemCommands.MaximizeWindowCommand"
+                                        Icon="&#xE922;"
+                                        ToolTip="最大化" />
+                                    <controls:WinButton
+                                        x:Name="ButtonRestore"
+                                        Command="SystemCommands.RestoreWindowCommand"
+                                        Icon="&#xE923;"
+                                        ToolTip="向下还原" />
+                                    <controls:WinButton
+                                        x:Name="ButtonClose"
+                                        Command="SystemCommands.CloseWindowCommand"
+                                        Icon="&#xE8bb;"
+                                        Style="{DynamicResource WinButtonStyle_Close}"
+                                        ToolTip="关闭" />
+                                </StackPanel>
+                            </Grid>
+                            <!--  遮罩层  -->
+                            <Border
+                                x:Name="MaskLayer"
+                                Grid.RowSpan="2"
+                                Background="Black"
+                                IsHitTestVisible="False"
+                                Opacity="0" />
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="WindowState" Value="Maximized">
+                            <Setter TargetName="WorkArea" Property="MaxWidth" Value="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}" />
+                            <Setter TargetName="WorkArea" Property="MaxHeight" Value="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Height}" />
+                            <Setter TargetName="ButtonMax" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="ButtonRestore" Property="Visibility" Value="Visible" />
+                        </Trigger>
+                        <Trigger Property="WindowState" Value="Normal">
+                            <Setter TargetName="ButtonMax" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="ButtonRestore" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="ResizeMode" Value="NoResize">
+                            <Setter TargetName="ButtonMin" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="ButtonMax" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="ButtonRestore" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="ResizeMode" Value="CanMinimize">
+                            <Setter TargetName="ButtonMax" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="ButtonRestore" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsShowMaskLayer}" Value="True">
+                            <DataTrigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            BeginTime="00:00:00"
+                                            Storyboard.TargetName="MaskLayer"
+                                            Storyboard.TargetProperty="Opacity"
+                                            From="0"
+                                            To="0.5"
+                                            Duration="00:00:0.2">
+                                            <DoubleAnimation.EasingFunction>
+                                                <PowerEase EasingMode="EaseInOut" />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </DataTrigger.EnterActions>
+                            <DataTrigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            BeginTime="00:00:00"
+                                            Storyboard.TargetName="MaskLayer"
+                                            Storyboard.TargetProperty="Opacity"
+                                            From="0.5"
+                                            To="0"
+                                            Duration="00:00:0.2">
+                                            <DoubleAnimation.EasingFunction>
+                                                <PowerEase EasingMode="EaseInOut" />
+                                            </DoubleAnimation.EasingFunction>
+                                        </DoubleAnimation>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </DataTrigger.ExitActions>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

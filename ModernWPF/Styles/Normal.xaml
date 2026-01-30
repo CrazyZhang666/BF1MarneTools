@@ -1,0 +1,39 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/ModernWPF;component/Styles/Base.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="{x:Type ToolTip}">
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="Foreground" Value="#000000" />
+        <Setter Property="Background" Value="#FFFFFF" />
+    </Style>
+
+    <Style TargetType="{x:Type Hyperlink}">
+        <Setter Property="TextBlock.TextDecorations" Value="{x:Null}" />
+        <Setter Property="Foreground" Value="#0B69DA" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="TextBlock.TextDecorations" Value="Underline" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type Separator}">
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Background" Value="#DCDFE6" />
+        <Setter Property="Margin" Value="8,8,8,0" />
+    </Style>
+
+    <Style TargetType="{x:Type Image}">
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="Stretch" Value="UniformToFill" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="UseLayoutRounding" Value="True" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality" />
+    </Style>
+
+</ResourceDictionary>

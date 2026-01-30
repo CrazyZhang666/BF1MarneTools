@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BF1MarneTools", "BF1MarneTools\BF1MarneTools.csproj", "{B8F32D4B-D50E-4553-B217-6F4E2C4F04AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernWPF", "ModernWPF\ModernWPF.csproj", "{7445A183-926D-477F-B419-4C9C8868F187}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EADesktop", "EADesktop\EADesktop.csproj", "{0F1DC761-261B-4DDF-BC9A-C71A71F9EF61}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoadMarne", "LoadMarne\LoadMarne.vcxproj", "{46E24E0F-9875-49C9-B600-F0F5D81C0010}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{41E22822-25DF-4092-A2A0-2206F46D6462}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "main", "main", "{02850F57-904D-49BF-A69C-96C7C50BC5A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{11DEF5E3-AC5B-4007-AFA6-467D78012801}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8F32D4B-D50E-4553-B217-6F4E2C4F04AB}.Debug|x64.ActiveCfg = Debug|x64
+		{B8F32D4B-D50E-4553-B217-6F4E2C4F04AB}.Debug|x64.Build.0 = Debug|x64
+		{B8F32D4B-D50E-4553-B217-6F4E2C4F04AB}.Release|x64.ActiveCfg = Release|x64
+		{B8F32D4B-D50E-4553-B217-6F4E2C4F04AB}.Release|x64.Build.0 = Release|x64
+		{7445A183-926D-477F-B419-4C9C8868F187}.Debug|x64.ActiveCfg = Debug|x64
+		{7445A183-926D-477F-B419-4C9C8868F187}.Debug|x64.Build.0 = Debug|x64
+		{7445A183-926D-477F-B419-4C9C8868F187}.Release|x64.ActiveCfg = Release|x64
+		{7445A183-926D-477F-B419-4C9C8868F187}.Release|x64.Build.0 = Release|x64
+		{0F1DC761-261B-4DDF-BC9A-C71A71F9EF61}.Debug|x64.ActiveCfg = Release|x64
+		{0F1DC761-261B-4DDF-BC9A-C71A71F9EF61}.Release|x64.ActiveCfg = Release|x64
+		{46E24E0F-9875-49C9-B600-F0F5D81C0010}.Debug|x64.ActiveCfg = Release|x64
+		{46E24E0F-9875-49C9-B600-F0F5D81C0010}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8F32D4B-D50E-4553-B217-6F4E2C4F04AB} = {02850F57-904D-49BF-A69C-96C7C50BC5A8}
+		{7445A183-926D-477F-B419-4C9C8868F187} = {41E22822-25DF-4092-A2A0-2206F46D6462}
+		{0F1DC761-261B-4DDF-BC9A-C71A71F9EF61} = {41E22822-25DF-4092-A2A0-2206F46D6462}
+		{46E24E0F-9875-49C9-B600-F0F5D81C0010} = {41E22822-25DF-4092-A2A0-2206F46D6462}
+		{41E22822-25DF-4092-A2A0-2206F46D6462} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{02850F57-904D-49BF-A69C-96C7C50BC5A8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5EEDB27-9ABE-46E3-B765-FA7F4DB7BC96}
+	EndGlobalSection
+EndGlobal
