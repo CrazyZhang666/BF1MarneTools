@@ -1,0 +1,7 @@
+<LSX>
+	<Response sender="EbisuSDK" id="[[Id]]">
+		<QueryImageResponse Result="0">
+			<Image ImageId="[[ImageId]]" Width="[[Width]]" Height="[[Width]]" ResourcePath="[[ResourcePath]]" />
+		</QueryImageResponse>
+	</Response>
+</LSX>

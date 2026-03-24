@@ -1,0 +1,66 @@
+<UserControl
+    x:Class="BF1MarneTools.Views.ToolsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:root="clr-namespace:BF1MarneTools"
+    xmlns:ui="http://wpf.microsoft.com/ui/2026/xaml"
+    d:DesignHeight="100"
+    d:DesignWidth="800"
+    DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+    mc:Ignorable="d">
+
+    <DockPanel Margin="3">
+        <!--  按钮功能  -->
+        <WrapPanel
+            VerticalAlignment="Center"
+            DockPanel.Dock="Right"
+            Visibility="{Binding Path=(root:Globals.IsUseServer), Converter={StaticResource EnabledToVisibility2Converter}}">
+            <CheckBox
+                Margin="2.5"
+                Content="显示FPS"
+                IsChecked="{Binding Path=(root:Globals.IsDrawFps)}" />
+        </WrapPanel>
+
+        <!--  开关功能  -->
+        <WrapPanel VerticalAlignment="Center">
+            <ui:IconButton
+                Margin="2.5"
+                Command="{Binding ClearModDataCommand}"
+                Content="清理Mod数据"
+                Icon="&#xE74D;" />
+            <ui:IconButton
+                Margin="2.5"
+                Command="{Binding KillBf1ProcessCommand}"
+                Content="结束战地1进程"
+                Icon="&#xF78A;" />
+            <Border
+                Width="1"
+                Margin="7"
+                Background="Gray" />
+            <!--  //////  -->
+            <ui:IconButton
+                Margin="2.5"
+                Command="{Binding EditServerSettingsCommand}"
+                Content="编辑服务器设置"
+                Icon="&#xE74C;" />
+            <ui:IconButton
+                Margin="2.5"
+                Command="{Binding EditMapListCommand}"
+                Content="编辑地图列表"
+                Icon="&#xE826;" />
+            <Border
+                Width="1"
+                Margin="7"
+                Background="Gray" />
+            <!--  //////  -->
+            <ui:IconButton
+                Margin="2.5"
+                Command="{Binding OpenIPOverrideWebCommand}"
+                Content="IP重定向"
+                Icon="&#xE909;" />
+        </WrapPanel>
+    </DockPanel>
+
+</UserControl>

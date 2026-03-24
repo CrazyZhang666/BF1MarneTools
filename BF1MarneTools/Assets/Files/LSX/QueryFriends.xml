@@ -1,0 +1,11 @@
+<LSX>
+	<Response sender="XMPP" id="[[Id]]">
+		<QueryFriendsResponse>
+			<Friend RichPresence="馬恩官網: https://marne.io" AvatarId="[[AvatarId]]"
+                UserId="20001" Group="" Title="馬恩官網: https://marne.io"
+                TitleId="Origin.OFR.50.0004152" GamePresence="" Persona="01 - Marne"
+                PersonaId="10001" State="MUTUAL" MultiplayerId="196216" GroupId=""
+                Presence="INGAME" />
+		</QueryFriendsResponse>
+	</Response>
+</LSX>

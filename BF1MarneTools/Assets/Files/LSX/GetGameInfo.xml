@@ -1,0 +1,5 @@
+<LSX>
+	<Response sender="EbisuSDK" id="[[Id]]">
+		<GetGameInfoResponse GameInfo="[[GameInfo]]" />
+	</Response>
+</LSX>

@@ -1,0 +1,5 @@
+<LSX>
+	<Response sender="EbisuSDK" id="[[Id]]">
+		<GetBlockListResponse Return="Success" />
+	</Response>
+</LSX>

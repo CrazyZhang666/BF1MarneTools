@@ -1,0 +1,8 @@
+<LSX>
+	<Response sender="XMPP" id="[[Id]]">
+		<QueryPresenceResponse>
+			<Friend GamePresence="" GroupId="" PersonaId="0" State="NONE" Presence="UNKNOWN" MultiplayerId=""
+				AvatarId="" RichPresence="" Persona="------" Title="" UserId="[[UserId]]" Group="" TitleId=""/>
+		</QueryPresenceResponse>
+	</Response>
+</LSX>

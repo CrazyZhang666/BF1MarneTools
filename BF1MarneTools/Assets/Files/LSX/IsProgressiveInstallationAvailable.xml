@@ -1,0 +1,5 @@
+<LSX>
+	<Response sender="PI" id="[[Id]]">
+		<IsProgressiveInstallationAvailableResponse Available="false" ItemId="Origin.OFR.50.0004342" />
+	</Response>
+</LSX>

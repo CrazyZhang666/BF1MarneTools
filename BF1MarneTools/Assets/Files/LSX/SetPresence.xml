@@ -1,0 +1,5 @@
+<LSX>
+	<Response sender="XMPP" id="[[Id]]">
+		<ErrorSuccess Description="" Code="0" />
+	</Response>
+</LSX>

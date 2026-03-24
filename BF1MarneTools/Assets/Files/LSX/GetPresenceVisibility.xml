@@ -1,0 +1,5 @@
+<LSX>
+	<Response sender="XMPP" id="[[Id]]">
+		<GetPresenceVisibilityResponse Visible="false"/>
+	</Response>
+</LSX>
