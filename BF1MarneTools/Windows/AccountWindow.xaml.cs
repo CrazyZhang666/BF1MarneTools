@@ -26,8 +26,6 @@ public partial class AccountWindow
     {
         TextBoxHint_Email.Text = Globals.Email;
         TextBoxHint_Password.Text = Globals.Password;
-
-        TextBoxHint_GameToken.Text = Globals.GameToken;
     }
 
     /// <summary>
@@ -35,17 +33,6 @@ public partial class AccountWindow
     /// </summary>
     private void Window_Account_Closing(object sender, CancelEventArgs e)
     {
-    }
-
-    /// <summary>
-    /// 重置D加密令牌
-    /// </summary>
-    [RelayCommand]
-    private void ResetGameToken()
-    {
-        Globals.ResetGameToken();
-
-        this.Close();
     }
 
     /// <summary>

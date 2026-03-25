@@ -14,9 +14,9 @@
 [assembly: AssemblyTitle("战地1马恩工具箱")]
 [assembly: AssemblyCompany("https://battlefield.vip")]
 [assembly: AssemblyProduct("战地1马恩工具箱")]
-[assembly: AssemblyVersion("2.3.1.0")]
-[assembly: AssemblyFileVersion("2.3.1.0")]
-[assembly: AssemblyInformationalVersion("2.3.1.0")]
+[assembly: AssemblyVersion("2.3.2.0")]
+[assembly: AssemblyFileVersion("2.3.2.0")]
+[assembly: AssemblyInformationalVersion("2.3.2.0")]
 
 // 不重复
 [assembly: AssemblyDescription("https://battlefield.vip")]

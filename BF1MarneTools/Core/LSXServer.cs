@@ -312,7 +312,7 @@ public static class LSXServer
             LoggerHelper.Info("等待游戏生成新的D加密许可证...");
 
             // 先重置缓存的D加密许可证
-            Globals.ResetGameToken();
+            Globals.GameToken = string.Empty;
             // 直接返回一个空的许可证，这样游戏会立刻请求新的许可证
             return LSXResp.RequestLicense(id, string.Empty);
         }

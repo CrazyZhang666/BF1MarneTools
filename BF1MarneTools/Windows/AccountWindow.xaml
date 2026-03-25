@@ -9,9 +9,9 @@
     x:Name="Window_Account"
     Title="战地1马恩工具箱"
     Width="500"
-    Height="360"
+    Height="260"
     MinWidth="500"
-    MinHeight="360"
+    MinHeight="260"
     Closing="Window_Account_Closing"
     ContentRendered="Window_Account_ContentRendered"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
@@ -41,16 +41,6 @@
                 Hint="输入拥有战地1游戏的EA账号的密码"
                 Icon="&#xE8D7;" />
 
-            <ui:IconHeader Title="D加密令牌" Margin="5,0,5,0" />
-            <ui:TextBoxHint
-                x:Name="TextBoxHint_GameToken"
-                Height="70"
-                Hint="显示启动战地1所需的D加密许可证令牌"
-                Icon="&#xE821;"
-                IsReadOnly="True"
-                Opacity="0.75"
-                Style="{StaticResource TextBoxHintStyle_MultiLine}" />
-
             <TextBlock
                 Margin="7,5,7,5"
                 Foreground="{StaticResource TextSecondColor}"
@@ -63,17 +53,6 @@
             Grid.Row="1"
             HorizontalAlignment="Right"
             Orientation="Horizontal">
-            <ui:IconButton
-                Margin="0,5,5,5"
-                Command="{Binding ResetGameTokenCommand}"
-                Content="重置D加密令牌"
-                Icon="&#xEBC4;" />
-            <!--  ////////  -->
-            <Border
-                Width="1"
-                Margin="5,10,10,10"
-                Background="#808080" />
-            <!--  ////////  -->
             <ui:IconButton
                 Margin="0,5,5,5"
                 Command="{Binding EnterAccountCommand}"

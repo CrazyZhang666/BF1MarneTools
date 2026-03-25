@@ -185,14 +185,6 @@ public static class Globals
         BF1InstallDir = Path.GetDirectoryName(appPath);
     }
 
-    /// <summary>
-    /// 重置D加密许可证
-    /// </summary>
-    public static void ResetGameToken()
-    {
-        GameToken = string.Empty;
-    }
-
     private static string ReadString(string section, string key)
     {
         return IniHelper.ReadString(section, key, _iniPath);
