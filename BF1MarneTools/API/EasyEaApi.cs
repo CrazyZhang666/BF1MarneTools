@@ -1,6 +1,6 @@
 using BF1MarneTools.Helper;
 
-namespace BF1MarneTools.API;
+namespace BF1MarneTools.Api;
 
 public static class EasyEaApi
 {
@@ -11,11 +11,11 @@ public static class EasyEaApi
     /// </summary>
     public static async Task<string> GetLSXLicense(string requestToken)
     {
-        //if (!string.IsNullOrWhiteSpace(Globals.GameToken))
-        //{
-        //    LoggerHelper.Info("已找到缓存的D加密许可证令牌");
-        //    return Globals.GameToken;
-        //}
+        if (!string.IsNullOrWhiteSpace(Globals.GameToken))
+        {
+            LoggerHelper.Info("已找到缓存的D加密许可证令牌");
+            return Globals.GameToken;
+        }
 
         LoggerHelper.Info("开始申请D加密许可证");
         return await GetLSXLicense(Globals.Email, Globals.Password, requestToken, ContentId_BF1);

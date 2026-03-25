@@ -1,7 +1,7 @@
 using BF1MarneTools.Helper;
 using RestSharp;
 
-namespace BF1MarneTools.API;
+namespace BF1MarneTools.Api;
 
 public static class CoreApi
 {

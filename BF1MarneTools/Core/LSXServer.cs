@@ -1,4 +1,4 @@
-using BF1MarneTools.API;
+using BF1MarneTools.Api;
 using BF1MarneTools.Helper;
 
 namespace BF1MarneTools.Core;
@@ -148,33 +148,27 @@ public static class LSXServer
                 try
                 {
                     var data = await ReadTcpString(client, networkStream);
+                    // 如果读取内容返回为空，则结束
                     if (string.IsNullOrWhiteSpace(data))
-                        goto SLEEP;
+                    {
+                        LoggerHelper.Warn($"警告: TCP 客户端 {clientIp} 连接已断开");
+                        return;
+                    }
 
                     data = EaCrypto.LSXDecryptBF1(data, seed);
-                    if (string.IsNullOrWhiteSpace(data))
-                        goto SLEEP;
-
                     data = await LSXRequestHandleForBF1(data, contentId);
-                    if (string.IsNullOrWhiteSpace(data))
-                        goto SLEEP;
 
-                    LoggerHelper.Trace($"当前 LSX 回复 {data}");
+                    // 过滤空消息
+                    if (!string.IsNullOrWhiteSpace(data))
+                        LoggerHelper.Trace($"当前 LSX 回复 {data}");
 
                     data = EaCrypto.LSXEncryptBF1(data, seed);
-                    if (string.IsNullOrWhiteSpace(data))
-                        goto SLEEP;
-
                     await WriteTcpString(client, networkStream, data);
                 }
                 catch (TimeoutException ex)
                 {
                     LoggerHelper.Error("处理 LSX TCP 客户端连接发生超时异常", ex);
                 }
-
-            // 防止上面死循环空转
-            SLEEP:
-                await Task.Delay(500);
             }
         }
         catch (Exception ex)
@@ -309,8 +303,19 @@ public static class LSXServer
         var requestTypeNode = requestNode.Elements().First();
         var requestTypeName = requestTypeNode.Name.LocalName;
 
-        LoggerHelper.Trace($"BF1 LSX 请求Id为: {id}");
-        LoggerHelper.Trace($"BF1 LSX 请求类型为: {requestTypeName}");
+        LoggerHelper.Debug($"BF1 LSX 请求Id为: {id}");
+        LoggerHelper.Debug($"BF1 LSX 请求类型为: {requestTypeName}");
+
+        if (requestTypeName == "InvalidateLicense")
+        {
+            LoggerHelper.Warn("警告：缓存的D加密许可证已过期");
+            LoggerHelper.Info("等待游戏生成新的D加密许可证...");
+
+            // 先重置缓存的D加密许可证
+            Globals.ResetGameToken();
+            // 直接返回一个空的许可证，这样游戏会立刻请求新的许可证
+            return LSXResp.RequestLicense(id, string.Empty);
+        }
 
         return requestTypeName switch
         {

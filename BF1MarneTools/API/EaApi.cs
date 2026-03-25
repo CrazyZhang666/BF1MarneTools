@@ -2,7 +2,7 @@ using BF1MarneTools.Core;
 using BF1MarneTools.Helper;
 using RestSharp;
 
-namespace BF1MarneTools.API;
+namespace BF1MarneTools.Api;
 
 public static class EaApi
 {
@@ -58,12 +58,23 @@ public static class EaApi
 
             if (response.StatusCode == HttpStatusCode.OK)
             {
-                var decryptStr = EaCrypto.Decrypt(response.RawBytes).Replace("", "");
-                var decryptArray = decryptStr.Split(EaCrypto.TokenSeparator, StringSplitOptions.RemoveEmptyEntries);
+                var decryptXmlStr = EaCrypto.Decrypt(response.RawBytes);
 
-                if (!string.IsNullOrWhiteSpace(decryptArray[1]))
+                var xmlDoc = XDocument.Parse(decryptXmlStr);
+                var xmlRoot = xmlDoc.Root;
+                var ns = xmlRoot.GetDefaultNamespace();
+
+                Globals.CipherKey = xmlRoot.Element(ns + "CipherKey")?.Value;
+                Globals.MachineHash = xmlRoot.Element(ns + "MachineHash")?.Value;
+                Globals.ContentId = xmlRoot.Element(ns + "ContentId")?.Value;
+                Globals.UserId = xmlRoot.Element(ns + "UserId")?.Value;
+                Globals.GameToken = xmlRoot.Element(ns + "GameToken")?.Value;
+                Globals.GrantTime = xmlRoot.Element(ns + "GrantTime")?.Value;
+                Globals.StartTime = xmlRoot.Element(ns + "StartTime")?.Value;
+
+                if (!string.IsNullOrWhiteSpace(Globals.GameToken))
                 {
-                    respResult.Content = decryptArray[1];
+                    respResult.Content = Globals.GameToken;
                     LoggerHelper.Debug($"{respResult.ApiName} 获取 License 成功 {respResult.Content}");
 
                     respResult.IsSuccess = true;

@@ -50,6 +50,14 @@ public static class Globals
 
     ///////////////////////////////////
 
+    public static string CipherKey { get; set; }
+    public static string MachineHash { get; set; }
+    public static string ContentId { get; set; }
+    public static string UserId { get; set; }
+    public static string GameToken { get; set; }
+    public static string GrantTime { get; set; }
+    public static string StartTime { get; set; }
+
     /// <summary>
     /// 是否使用服务端工作模式
     /// </summary>
@@ -113,6 +121,14 @@ public static class Globals
         Email = ReadString("EA", "Email");
         Password = ReadString("EA", "Password");
 
+        CipherKey = ReadString("License", "CipherKey");
+        MachineHash = ReadString("License", "MachineHash");
+        ContentId = ReadString("License", "ContentId");
+        UserId = ReadString("License", "UserId");
+        GameToken = ReadString("License", "GameToken");
+        GrantTime = ReadString("License", "GrantTime");
+        StartTime = ReadString("License", "StartTime");
+
         IsUseServer = ReadBoolean("Mode", "IsUseServer");
 
         IsUseMod = ReadBoolean("Option", "IsUseMod");
@@ -137,6 +153,14 @@ public static class Globals
         WriteString("EA", "Email", Email);
         WriteString("EA", "Password", Password);
 
+        WriteString("License", "CipherKey", CipherKey);
+        WriteString("License", "MachineHash", MachineHash);
+        WriteString("License", "ContentId", ContentId);
+        WriteString("License", "UserId", UserId);
+        WriteString("License", "GameToken", GameToken);
+        WriteString("License", "GrantTime", GrantTime);
+        WriteString("License", "StartTime", StartTime);
+
         WriteBoolean("Mode", "IsUseServer", IsUseServer);
 
         WriteBoolean("Option", "IsUseMod", IsUseMod);
@@ -159,6 +183,14 @@ public static class Globals
 
         BF1AppPath = appPath;
         BF1InstallDir = Path.GetDirectoryName(appPath);
+    }
+
+    /// <summary>
+    /// 重置D加密许可证
+    /// </summary>
+    public static void ResetGameToken()
+    {
+        GameToken = string.Empty;
     }
 
     private static string ReadString(string section, string key)
