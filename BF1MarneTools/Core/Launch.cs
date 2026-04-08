@@ -114,12 +114,12 @@ public static class Launch
             {
                 // 是否显示Fps
                 if (Globals.IsDrawFps)
-                    argsList.Add(" -PerfOverlay.DrawFps true");
+                    argsList.Add("-PerfOverlay.DrawFps true");
             }
 
             // 是否使用Mod
             if (Globals.IsUseMod)
-                argsList.Add(" -dataPath ./ModData/Marne");
+                argsList.Add("-dataPath ./ModData/Marne");
 
             var startInfo = new ProcessStartInfo
             {
